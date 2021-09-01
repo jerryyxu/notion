@@ -6,5 +6,6 @@ on:
       - opened
 jobs:
   add-labels:
+    runs-on: ubuntu-latest
     steps:
-      - use ./.github/actions
+      - uses: ./.github/actions
