@@ -7,4 +7,4 @@ on:
 jobs:
   add-labels:
     steps:
-      - use ././github/actions
+      - use ./.github/actions
