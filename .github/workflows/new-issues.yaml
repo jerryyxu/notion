@@ -8,4 +8,4 @@ jobs:
   add-labels:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./.github/actions
+      - uses: ./.github/actions/issues
