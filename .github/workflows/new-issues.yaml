@@ -1,11 +1,13 @@
 name: New Issues
-
 on:
   issues:
     types:
       - opened
+      - reopened
 jobs:
-  add-labels:
+  label:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./../.github/actions/issues
+      - uses: actions/checkout@v2
+      - name: Labeler
+        uses: ${{ secrets.GITHUB_WORKSPACE }}/.github/actions/issues
