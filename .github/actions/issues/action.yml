@@ -9,5 +9,5 @@ inputs:
     default: ${{ github.repository_owner  }}
 
 runs:
-  using: "node12"
-  main: "./.github/actions/issues/index.js"
+  using: node12
+  main: .github/actions/issues/index.js
