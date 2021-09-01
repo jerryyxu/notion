@@ -1,0 +1,13 @@
+name: "Auto-assign Issue"
+description: "Auto-assigns issues to users"
+inputs:
+  repo-token:
+    description: "The GITHUB_TOKEN, needed to update the Issue"
+    default: ${{ github.token }}
+  assignees:
+    description: "Comma separated list of user names"
+    default: ${{ github.repository_owner  }}
+
+runs:
+  using: "node14"
+  main: "./.github/actions/issues/index.js"

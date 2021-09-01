@@ -1,0 +1,10 @@
+name: New Issues
+
+on:
+  issues:
+    types:
+      - opened
+jobs:
+  add-labels:
+    steps:
+      - use ././github/actions
